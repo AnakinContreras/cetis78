@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conoce CETis 78</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222}
+        .app{display:flex;min-height:100vh}
+        .sidebar{position:fixed;left:0;top:0;bottom:0;width:20%;max-width: 20%;min-width: 150px;background:linear-gradient(180deg,#580616,#74081e);color:#f6f8fb;padding:24px 18px;display:flex;flex-direction:column;gap:18px;box-shadow:2px 0 8px #5806167b;}
+        .logo{font-weight:700;font-size:18px;letter-spacing:0.6px}
+        .sub-logo{font-size:13px;color:#e6eef7}
+        .nav{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+        .nav a{color:#e2c35d;text-decoration:none;padding:10px 12px;border-radius:8px;display:inline-block}
+        .nav a:hover{background:rgba(255,255,255,0.08)}
+        .main{margin-left:max(20%, 150px);flex:1;display:flex;flex-direction:column;min-height:100vh;background:#f6f8fb;}
+        header{background:#818181;padding:18px 28px;border-bottom:1px solid #e6eef7;display:flex;align-items:center;justify-content:space-between;gap:12px}
+        header h1{font-size:18px;color:#580616}
+        .actions{display:flex;gap:10px}
+        .btn{background:#580616;color: #e2c35d;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:14px}
+        .content{padding:28px}
+        .card{background:white;border-radius:10px;padding:18px;margin-bottom:18px;box-shadow:0 2px 6px #5806167b}
+        .img-content{width: 100%;max-height: 400px;border-radius: 10px;margin-bottom:18px;box-shadow:0 2px 6px #5806167b}
+        footer{padding:14px 28px;color:#556; font-size:14px}
+        @media (max-width:150px){.sidebar{position:relative;width:100%;height:auto;flex-direction:row;padding:12px;align-items:center}.nav{flex-direction:row;gap:6px;margin-left:auto}.main{margin-left:0}}
+        .small{font-size:13px;color:#556}
+        .panel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+        .ul{margin-left: 5%;}
+        .ul-panel-grid{margin-left: 10%;}
+        .sub-ul-panel-grid{margin-left: 40%;}
+        section h2,h3{color: #580616;}
+        section a{color:#818181;text-decoration:none;}
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar" aria-label="Navegación principal">
+            <div class="logo">CETis 78</div>
+            <div class="sub-logo">Centro de Estudios Tecnológicos Industrial y de Servicios</div>
+            <nav class="nav" role="navigation" aria-label="Enlaces principales">
+                <a href="inicio.html">Inicio</a>
+                <a href="contacto.html">Contáctenos</a>
+            </nav>
+            <div style="margin-top:auto;font-size:13px;opacity:0.95">
+                <div>Tel: (833) 572 2997</div>
+                <div style="margin-top:6px">LÁZARO CÁRDENAS-VICENTE GUERRERO 302 COL. TAMPICO ALTAMIRA, Altamira</div>
+            </div>
+        </aside>
+        <main class="main">
+            <header>
+                <h1>Conoce CETis 78</h1>
+                <div class="actions">
+                    <a class="btn" href="inscripciones.html">Inscripciones</a>
+                    <a class="btn" href="" onclick="alert('Acción de ejemplo');return false;">Calendario</a>
+                </div>
+            </header>
+            <div class="content">
+                <section class="card">
+                    <h2>Conócenos</h2>
+                    <p class="small">Historia y valores del plantel.</p>
+                    <p style="margin-top: 10px">Información sobre la historia, visión, misión y el equipo directivo. Ideal para quienes buscan conocer los orígenes del CETis 78 y sus objetivos educativos.</p>
+                </section>
+                <section class="panel-grid">
+                    <img class="img-content" src="cetis781.png" alt="Imagen del edificio de administracion del plantel">
+                    <img class="img-content" src="cetis782.png" alt="Imagen del plantel">
+                </section>
+                <section class="card">
+                    <h3>Oferta educativa</h3>
+                    <p class="small">Carreras y especialidades disponibles.</p>
+                    <p>Lista de carreras técnicas, duración, materias relevantes y salidas profesionales que ofrece el plantel. Incluye opciones de prácticas y vinculación con la industria local a travez de servicio.</p>
+                </section>
+                <section class="card">
+                    <h3>Especialidades</h3>
+                    <p class="small">Las carreras de las que disponemos.</p>
+                    <section class="panel-grid">
+                        <article>
+                            <ul class="ul-panel-grid">
+                                <li>Administración.</li>
+                                <li>Mantenimiento.</li>
+                                <li>Programacion.</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <ul class="ul-panel-grid">
+                                <li>Electronica.</li>
+                                <li>Quimica.</li>
+                                <li>Soldadura.</li>
+                            </ul>
+                        </article>
+                    </section>
+                </section>
+                <section class="card panel-grid">
+                    <article>
+                        <h3>Instalaciones</h3>
+                        <p class="small">Areas designadas y condiciones educativas</p>
+                        <p>Contamos con areas designadas para cada especialidad, con el equipo necesario correspondiente para las mismas. <br><br>En cuanto a la seguridad el plantel esta capacitado con camaras y servicio medico auxiliar.</p>
+                    </article>
+                    <article>
+                        <h3>Equipo docente</h3>
+                        <p class="small">Profesores y personal administrativo</p>
+                        <p>Nuestro equipo docente está compuesto por profesionales calificados y comprometidos con la educación de calidad. <br><br>Se puede contactar al docentado por: direccion o por medio de nuestro contacto telefonico.</p>
+                    </article>
+                </section>
+            </div>
+            <footer>
+                &copy; <span id="year"></span> CETis 78 — Todos los derechos reservados.
+            </footer>
+        </main>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
