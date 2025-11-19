@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alumnos del CETis 78</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222}
+        .app{display:flex;min-height:100vh}
+        .sidebar{position:fixed;left:0;top:0;bottom:0;width:20%;max-width: 20%;min-width: 150px;background:linear-gradient(180deg,#580616,#74081e);color:#f6f8fb;padding:24px 18px;display:flex;flex-direction:column;gap:18px;box-shadow:2px 0 8px #5806167b;}
+        .logo{font-weight:700;font-size:18px;letter-spacing:0.6px}
+        .sub-logo{font-size:13px;color:#e6eef7}
+        .nav{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+        .nav a{color:#e2c35d;text-decoration:none;padding:10px 12px;border-radius:8px;display:inline-block}
+        .nav a:hover{background:rgba(255,255,255,0.08)}
+        .main{margin-left:max(20%, 150px);flex:1;display:flex;flex-direction:column;min-height:100vh;background:#f6f8fb;}
+        header{background:#818181;padding:18px 28px;border-bottom:1px solid #e6eef7;display:flex;align-items:center;justify-content:space-between;gap:12px}
+        header h1{font-size:18px;color:#580616}
+        .actions{display:flex;gap:10px}
+        .btn{background:#580616;color: #e2c35d;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:14px}
+        .content{padding:28px}
+        .card{background:white;border-radius:10px;padding:18px;margin-bottom:18px;box-shadow:0 2px 6px #5806167b}
+        .img-content{width: 100%;max-height: 400px;border-radius: 10px;margin-bottom:18px;box-shadow:0 2px 6px #5806167b;}
+        .img-card-content{width: 100%;max-height: 400px;border-radius: 10px;margin-bottom:18px;box-shadow:0 2px 6px #5806167b;}
+        footer{padding:14px 28px;color:#556; font-size:14px}
+        .small{font-size:13px;color:#556}
+        .panel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+        .ul{margin-left: 5%;}
+        .ul-panel-grid{margin-left: 10%;}
+        .sub-ul-panel-grid{margin-left: 40%;}
+        .table-title{background-color: #580616;color: #e6eef7;}
+        .table-content{background-color: #74081e;color: #e2c35d;}
+        section h2,h3{color: #580616;}
+        section a{color:#818181;text-decoration:none;}
+        section img{align-items: center;}
+        table{border-radius: 10px;margin: 10px;border: 3px solid #580616;background-color: #580616;}
+        table th{padding: 10px;}
+        table td{padding: 10px;border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar" aria-label="Navegación principal">
+            <div class="logo">CETis 78</div>
+            <div class="sub-logo">Centro de Estudios Tecnológicos Industrial y de Servicios</div>
+            <nav class="nav" role="navigation" aria-label="Enlaces principales">
+                <a href="..\index.html">Inicio</a>
+                <a href="..\conocenos.html">Conocenos</a>
+                <a href="..\contacto.html">Contáctenos</a>
+                <br><a href="alumnos5C.html">Alumnos</a>
+            </nav>
+            <div style="margin-top:auto;font-size:13px;opacity:0.95">
+                <div>Tel: (833) 572 2997</div>
+                <div style="margin-top:6px">LÁZARO CÁRDENAS-VICENTE GUERRERO 302 COL. TAMPICO ALTAMIRA, Altamira</div>
+            </div>
+        </aside>
+        <main class="main">
+            <header>
+                <h1>Alumnos del CETis 78</h1>
+                <div class="actions">
+                    <a class="btn" href="inscripciones.html">Inscripciones</a>
+                    <a class="btn" href="" onclick="alert('Acción de ejemplo');return false;">Calendario</a>
+                </div>
+            </header>
+            <div class="content">
+                <section class="card">
+                    <h2>Zavala Hernandez Melanie</h2>
+                    <p class="small">Se mostraran los datos del alumno.</p>
+                    <h3>Datos Personales</h3>
+                    <div class="panel-grid">
+                        <ul class="ul-panel-grid">
+                            <li>Nombre: Zavala Hernandez Melanie.</li>
+                            <li>Fecha de nacimiento: 29/11/2006</li>
+                        </ul>
+                        <ul class="ul-panel-grid">
+                            <li>Grado y Grupo: 5° C.</li>
+                            <li>Especialidad: Programacion</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <h3>Boleta</h3>
+                    <p class="small">Boleta del alumno.</p>
+                    <table>
+                        <tr class="table-title">
+                            <th>Parciales</th><th>Ingles V</th><th>Temas Selectos De Matematicas II</th><th>La Energia En Los Procesos De La vida Diaria</th><th>Aplicaciones Del Pensamiento Matematico</th><th>Sub Modulo I: Constrye Aplicaciones Web</th><th>Sub Modulo II: Aplicaciones Web</th>
+                        </tr>
+                        <tr class="table-content">
+                            <td>1er Parcial</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td>
+                        </tr>
+                        <tr class="table-content">
+                            <td>2do Parcial</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td>
+                        </tr>
+                        <tr class="table-content">
+                            <td>3er Parcial</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="card">
+                    <h3>Credencial</h3>
+                    <p class="small">credencial que porta el alumno.</p>
+                    <img class="img-card-content" src="credenciales/bautistamacias.png" alt="Imagen de la credencial del alumno Bautista Macias Julio Abraham">
+                </section>
+                <section class="card">
+                    <h3>Noticias recientes</h3>
+                    <p class="small">Eventos y comunicados importantes.</p>
+                    <ul class="ul">
+                        <li>Entrega de reconocimientos al alumnado destacado.</li>
+                        <li>Convocatoria para inscripciones 2025.</li>
+                        <li>Talleres y ferias tecnológicas.</li>
+                    </ul>
+                </section>
+            </div>
+            <footer>
+                &copy; <span id="year"></span> CETis 78 — Todos los derechos reservados.
+            </footer>
+        </main>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
